@@ -1,21 +1,35 @@
-MIT License
+Research and Non-Commercial Use License
 
-Copyright (c) 2026 v22jasonh
+Copyright (c) 2026 v22jasonh. All rights reserved.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+1. Permission
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Subject to the terms below, permission is granted to use, copy, and modify this repository and its contents solely within the People's Republic of China for non-commercial testing, learning, and research purposes.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+2. Prohibited Uses
+
+Without prior written permission from the repository administrator, you may not:
+
+(a) use this repository or any part of it for commercial purposes, including paid consulting, paid training, commercial products, commercial software, commercial databases, commercial model training, client deliverables, paid content services, or any activity intended to obtain direct or indirect commercial benefit;
+
+(b) reproduce, republish, redistribute, mirror, aggregate, syndicate, adapt for publication, or otherwise disseminate the repository contents through WeChat official accounts, self-media accounts, content platforms, media outlets, training institutions, or similar public channels;
+
+(c) use, deploy, distribute, or make the repository available outside the People's Republic of China;
+
+(d) use the repository for any activity that violates applicable laws, regulations, regulatory requirements, lawful organizational rules, or third-party rights.
+
+3. Accuracy and Timeliness
+
+The repository administrator does not warrant that the contents are complete, current, accurate, error-free, or suitable for any particular matter. Laws, regulations, judicial interpretations, regulatory rules, local rules, institutional arrangements, and practical approaches may change at any time. Users must independently verify current official sources and make their own judgments.
+
+4. No Professional Advice
+
+The repository does not constitute legal advice, judicial advice, financial or investment advice, tax advice, audit advice, accounting advice, regulatory advice, or any guarantee concerning a transaction, contract, litigation, arbitration, enforcement, bankruptcy, or other matter.
+
+5. Disclaimer of Liability
+
+To the maximum extent permitted by applicable law, the repository administrator shall not be liable for any direct, indirect, incidental, consequential, regulatory, legal, tax, business, data, or other loss arising from the use, misuse, reliance on, distribution of, or inability to use this repository.
+
+6. Acceptance
+
+By using this repository, you acknowledge that you have read and accepted this License and the repository's DISCLAIMER.md. Any use outside the scope expressly permitted above requires prior written authorization from the repository administrator.
