@@ -1,0 +1,21 @@
+name: 法域/功能扩展
+description: 建议新增法律领域、官方来源或检索规则
+title: "[扩展] "
+labels: []
+body:
+  - type: input
+    id: area
+    attributes:
+      label: 法域或业务主题
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: 为什么需要加入
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: 建议官方来源
