@@ -1,0 +1,49 @@
+name: Build Domestic AI ZIP Packages
+
+on:
+  push:
+    paths:
+      - 'adapters/domestic-ai/**'
+      - '.github/workflows/build-domestic-ai-zips.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build packages
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p dist
+          for platform in common qwen doubao zhipu; do
+            out="dist/china-financial-official-documents-${platform}-v2.4.0.zip"
+            rm -f "$out" "$out.sha256"
+            cd adapters/domestic-ai
+            zip -qr "../../$out" "$platform"
+            cd ../..
+            sha256sum "$out" > "$out.sha256"
+          done
+
+      - name: Commit packages
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add dist/china-financial-official-documents-common-v2.4.0.zip* \
+                  dist/china-financial-official-documents-qwen-v2.4.0.zip* \
+                  dist/china-financial-official-documents-doubao-v2.4.0.zip* \
+                  dist/china-financial-official-documents-zhipu-v2.4.0.zip*
+          if git diff --cached --quiet; then
+            echo 'Packages unchanged.'
+          else
+            git commit -m 'Build domestic AI ZIP packages'
+            git push
+          fi
