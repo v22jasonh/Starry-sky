@@ -1,5 +1,19 @@
 # Changelog
 
+## [2.3.0] - 2026-08-29
+
+### Added
+- 新增银行授信/借款合同专项审核模块 `contracts/BANK_CREDIT_REVIEW.md`；
+- 新增 NPL 不良债权/资产包转让协议专项审核模块 `contracts/NPL_TRANSFER_REVIEW.md`；
+- 新增 SPV/资产装入/资产管理/资产处置协议专项审核模块 `contracts/SPV_ASSET_DISPOSAL_REVIEW.md`；
+- 新增金融合同共享红线条款与标准修订语言库 `contracts/CLAUSE_REDLINE_LIBRARY.md`；
+- 新增合同专项路由索引 `contracts/README.md`。
+
+### Changed
+- `SKILL.md` 增加三类金融合同的自动专项路由；
+- 合同审核从通用方法论升级为“通用方法论 + 专项模块 + 红线语言库”三层架构；
+- 版本升级至 2.3.0。
+
 ## [2.2.0] - 2026-08-29
 
 ### Added
