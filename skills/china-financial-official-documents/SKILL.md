@@ -1,13 +1,13 @@
 ---
 name: china-financial-official-documents
 description: >-
-  检索、核验并分析中国金融业务相关的官方法律法规、司法解释、监管文件和地方规则；同时提供专业合同审核、修订、风险分级和谈判建议。用于查金融文件原文、文号、现行效力、历史版本、机构沿革、银行不良资产与核销、债权转让、担保、仲裁、诉讼执行、破产、税务、反洗钱、证券保险、数据合规，以及审核借款、担保、债权转让、SPV、资产管理、债务重组等金融合同。
+  检索、核验并分析中国金融业务相关的官方法律法规、司法解释、监管文件和地方规则；同时提供专业合同审核、修订、风险分级和谈判建议。用于查金融文件原文、文号、现行效力、历史版本、机构沿革、银行不良资产与核销、债权转让、担保、仲裁、诉讼执行、破产、税务、反洗钱、证券保险、数据合规，以及审核借款、授信、担保、NPL不良债权转让、SPV、资产处置、资产管理、债务重组等金融合同。
 license: MIT
 compatibility: >-
   适用于支持 Agent Skills 的客户端。进行现行效力、最新法规或官方原文核验时需要互联网/网页检索能力；无网络时只能做基于已提供材料的离线分析，并须明确时点限制。
 metadata:
   author: v22jasonh
-  version: "2.2.0"
+  version: "2.3.0"
   language: zh-CN
   jurisdiction: CN
   updated: "2026-08-29"
@@ -33,6 +33,10 @@ metadata:
 - 涉及跨法域问题、公司/破产/执行/刑事/税务/数据/国资/跨境等衔接时，读取 `references/LEGAL_COVERAGE_MATRIX.md`。
 - 需要逐项核验文件身份和效力时，读取 `references/VALIDATION_CHECKLIST.md`。
 - 需要审核、修改、起草合同或识别合同红线时，读取 `references/CONTRACT_REVIEW_METHODOLOGY.md`；逐项扫描时再读取 `references/CONTRACT_REVIEW_CHECKLIST.md`。
+- 银行授信/借款合同，额外读取 `references/contracts/BANK_CREDIT_REVIEW.md`。
+- NPL不良债权/资产包转让协议，额外读取 `references/contracts/NPL_TRANSFER_REVIEW.md`。
+- SPV、资产装入、资产管理或处置协议，额外读取 `references/contracts/SPV_ASSET_DISPOSAL_REVIEW.md`。
+- 需要标准修订语言或替代控制措施时，读取 `references/contracts/CLAUSE_REDLINE_LIBRARY.md`。
 - 需要固定输出格式时，读取 `references/OUTPUT_TEMPLATES.md`。
 - 需要理解典型调用方式时，读取 `examples/README.md`。
 
@@ -183,13 +187,15 @@ metadata:
 
 对以下合同默认加载合同审核方法论并结合相应法律覆盖矩阵：
 
-- 借款/授信合同；
+- 借款/授信合同：加载 `references/contracts/BANK_CREDIT_REVIEW.md`；
 - 保证、抵押、质押和其他增信文件；
-- 债权转让、不良资产转让协议；
-- SPV、资产管理、催收服务协议；
+- 债权转让、不良资产/NPL转让协议：加载 `references/contracts/NPL_TRANSFER_REVIEW.md`；
+- SPV、资产装入、资产管理、资产处置、回款分配协议：加载 `references/contracts/SPV_ASSET_DISPOSAL_REVIEW.md`；
 - 债务重组、和解、展期协议；
 - 保理、融资租赁、票据、应收账款融资；
 - 账户监管、资金归集、回款分配协议。
+
+出现单方自由裁量、MAC、交叉违约、责任上限、误收回款、按现状转让、数据共享、通知、争议解决等高频条款时，可调用 `references/contracts/CLAUSE_REDLINE_LIBRARY.md` 生成标准修订语言，但必须结合具体交易调整。
 
 必须同时检查合同条款与实际诉讼、仲裁、执行、破产路径是否一致。
 
