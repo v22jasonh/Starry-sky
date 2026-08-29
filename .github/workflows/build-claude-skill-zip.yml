@@ -1,0 +1,43 @@
+name: Build Claude Skill ZIP
+
+on:
+  push:
+    paths:
+      - '.claude/skills/china-financial-official-documents/**'
+      - '.github/workflows/build-claude-skill-zip.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build Claude Skill ZIP
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p dist
+          rm -f dist/china-financial-official-documents-claude-v2.3.0.zip
+          cd .claude/skills
+          zip -qr ../../dist/china-financial-official-documents-claude-v2.3.0.zip china-financial-official-documents
+          cd ../..
+          sha256sum dist/china-financial-official-documents-claude-v2.3.0.zip > dist/china-financial-official-documents-claude-v2.3.0.zip.sha256
+
+      - name: Commit package
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add dist/china-financial-official-documents-claude-v2.3.0.zip dist/china-financial-official-documents-claude-v2.3.0.zip.sha256
+          if git diff --cached --quiet; then
+            echo 'Package unchanged.'
+          else
+            git commit -m 'Build Claude Skill ZIP package'
+            git push
+          fi
