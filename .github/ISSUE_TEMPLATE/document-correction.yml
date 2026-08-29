@@ -1,0 +1,27 @@
+name: 法规/文件纠错
+description: 报告文件名称、文号、日期、效力或官方来源问题
+title: "[纠错] "
+labels: []
+body:
+  - type: input
+    id: document
+    attributes:
+      label: 文件名称
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: 官方来源
+      description: 请尽量提供原发文机关或官方法规库链接
+  - type: textarea
+    id: issue
+    attributes:
+      label: 问题说明
+      description: 例如文号错误、已废止、日期错误、机构沿革错误等
+    validations:
+      required: true
+  - type: textarea
+    id: proposed
+    attributes:
+      label: 建议修订
