@@ -2,15 +2,15 @@
 name: china-financial-official-documents
 description: >-
   检索、核验并分析中国金融业务相关的官方法律法规、司法解释、监管文件和地方规则；同时提供专业合同审核、修订、风险分级和谈判建议。用于查金融文件原文、文号、现行效力、历史版本、机构沿革、银行不良资产与核销、债权转让、担保、仲裁、诉讼执行、破产、税务、反洗钱、证券保险、数据合规，以及审核借款、授信、担保、NPL不良债权转让、SPV、资产处置、资产管理、债务重组等金融合同。
-license: MIT
+license: Custom non-commercial license; see repository LICENSE and DISCLAIMER.md
 compatibility: >-
   适用于支持 Agent Skills 的客户端。进行现行效力、最新法规或官方原文核验时需要互联网/网页检索能力；无网络时只能做基于已提供材料的离线分析，并须明确时点限制。
 metadata:
   author: v22jasonh
-  version: "2.3.0"
+  version: "2.3.1"
   language: zh-CN
   jurisdiction: CN
-  updated: "2026-08-29"
+  updated: "2026-10-02"
 ---
 
 # 中国金融官方文件检索、效力分析与合同审核
