@@ -12,7 +12,7 @@ Claude Code 可按项目级 Skill 发现并按需加载本目录中的 `referenc
 
 ## 2. claude.ai Custom Skills
 
-将整个 `china-financial-official-documents` 目录打包成 ZIP 后上传。ZIP 根目录应直接包含：
+发行ZIP保留单一 `china-financial-official-documents/` 顶层文件夹，文件夹内包含：
 
 - `SKILL.md`
 - `references/`
@@ -35,3 +35,7 @@ Claude Code 可按项目级 Skill 发现并按需加载本目录中的 `referenc
 ## 使用限制
 
 仅限中华人民共和国境内进行非商业测试、学习和研究。禁止商业用途、未经许可的公开转载发布及境外使用。具体以 `LICENSE.txt` 与 `DISCLAIMER.md` 为准。
+
+## 本次更新
+
+版本 2.5.0；更新时间 2026-10-27（Asia/Shanghai）。正文与主文库一致，证据日期及未完成项见 `references/LAW_INDEX.md`。

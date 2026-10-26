@@ -16,7 +16,7 @@ Claude Code 可从该目录发现 Skill，并按任务需要读取 `references/`
 
 将 `.claude/skills/china-financial-official-documents/` **目录本身**打成 ZIP 后上传。
 
-ZIP 根目录应直接包含：
+发行 ZIP 保留单一 `china-financial-official-documents/` 顶层文件夹，文件夹内包含：
 
 - `SKILL.md`
 - `README.md`

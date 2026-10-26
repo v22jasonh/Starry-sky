@@ -1,0 +1,10 @@
+*.md text eol=lf
+*.json text eol=lf
+*.py text eol=lf
+*.yml text eol=lf
+*.txt text eol=lf
+*.sha256 text eol=lf
+sources/** -text -diff -whitespace
+*.zip -text
+*.pdf -text
+*.png -text

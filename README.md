@@ -22,11 +22,24 @@
 
 `skills/china-financial-official-documents/SKILL.md`
 
-当前主文库版本：**2.3.1**
+当前发行版本：**2.5.0**（主文库、Claude、通用国产平台、千问、豆包、智谱同步）。
 
-更新时间：**2026-10-02（Asia/Shanghai）**。本次为元数据维护版本；Claude 与国产平台适配版沿用各自版本号。
+**最近更新时间：2026-10-27（Asia/Shanghai）**。
 
-本次更新修正主文库许可元数据并记录版本与日期，不代表已对全部法规进行截至该日的重新核验。
+本次发布新增17件规范资料：16件完整正文与1件附件待核验的公告；13件条文化规范共2,155条。法规证据复核记录日期为2026-10-03，**不表示截至最近更新时间已经完成全量法规时效复核**。
+
+- [法规正文索引与未完成事项](skills/china-financial-official-documents/references/LAW_INDEX.md)
+- [机器可读台账](skills/china-financial-official-documents/references/LEGAL_MANIFEST.json)
+- [GitHub版本下载](https://github.com/v22jasonh/Starry-sky/releases/tag/v2.5.0)
+
+|发行包|下载|
+|---|---|
+|core|[core v2.5.0](dist/china-financial-official-documents-core-v2.5.0.zip)|
+|claude|[claude v2.5.0](dist/china-financial-official-documents-claude-v2.5.0.zip)|
+|common|[common v2.5.0](dist/china-financial-official-documents-common-v2.5.0.zip)|
+|qwen|[qwen v2.5.0](dist/china-financial-official-documents-qwen-v2.5.0.zip)|
+|doubao|[doubao v2.5.0](dist/china-financial-official-documents-doubao-v2.5.0.zip)|
+|zhipu|[zhipu v2.5.0](dist/china-financial-official-documents-zhipu-v2.5.0.zip)|
 
 ## 适用范围
 
