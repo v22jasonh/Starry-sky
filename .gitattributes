@@ -8,3 +8,6 @@ sources/** -text -diff -whitespace
 *.zip -text
 *.pdf -text
 *.png -text
+
+# Preserve downloaded evidence bytes.
+**/references/bank/sources/* -text -diff -whitespace

@@ -1,8 +1,9 @@
 {
-  "version": "2.5.0",
+  "version": "2.6.0",
   "platform": "zhipu",
-  "updated": "2026-10-27",
+  "updated": "2026-10-28",
   "legal_reviewed_on": "2026-10-03",
   "catalog_evidence_as_of": "2026-08-28",
-  "full_review_complete": false
+  "full_review_complete": false,
+  "bank_topics_reviewed_on": "2026-10-27"
 }

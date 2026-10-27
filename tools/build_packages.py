@@ -37,6 +37,19 @@ def validate():
             if not re.match(r'https?://',target):assert (path.parent/target).exists(),(path,target)
         if row.get('image_sha256'):
             assert digest((CORE/'references/laws/images/vat_deduction_formula.png').read_bytes())==row['image_sha256']
+    for row in manifest.get('supplemental_sources',[]):
+        data=(CORE/'references'/row['path']).read_bytes()
+        assert digest(data)==row['sha256'],row['path']
+        assert data==(ROOT/row['snapshot_path']).read_bytes(),row['path']
+        if row.get('extracted_path'):
+            assert digest((CORE/'references'/row['extracted_path']).read_bytes())==row['extracted_sha256']
+    for review in manifest.get('topic_reviews',[]):
+        for relative in review['paths']:
+            topic=CORE/'references'/relative
+            text=topic.read_text(encoding='utf-8')
+            assert '\ufffd' not in text,topic
+            for target in re.findall(r'\]\(([^\s)]+)\)',text):
+                if not re.match(r'https?://',target):assert (topic.parent/target).exists(),target
     for platform,folder in FOLDERS.items():
         meta=json.loads((folder/'VERSION.json').read_text(encoding='utf-8'))
         assert meta==dict(config,platform=platform),platform
@@ -45,6 +58,7 @@ def validate():
         entry=folder/('SKILL.md' if platform in ('core','claude') else 'SYSTEM_PROMPT.md')
         text=entry.read_text(encoding='utf-8')
         assert 'references/LAW_INDEX.md' in text and 'references/LEGAL_MANIFEST.json' in text,platform
+        assert 'references/BANK_ECL.md' in text and 'references/BANK_WRITEOFF.md' in text,platform
         if platform in ('core','claude'):
             assert f'version: "{config["version"]}"' in text,platform
             assert f'updated: "{config["updated"]}"' in text,platform

@@ -38,4 +38,6 @@ Claude Code 可按项目级 Skill 发现并按需加载本目录中的 `referenc
 
 ## 本次更新
 
-版本 2.5.0；更新时间 2026-10-27（Asia/Shanghai）。正文与主文库一致，证据日期及未完成项见 `references/LAW_INDEX.md`。
+版本 2.6.0；更新时间 2026-10-27（Asia/Shanghai）。正文与主文库一致，证据日期及未完成项见 `references/LAW_INDEX.md`。
+
+银行ECL及呆账核销专题核验日2026-10-27；详见 `references/BANK_ECL.md` 和 `references/BANK_WRITEOFF.md`。

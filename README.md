@@ -22,24 +22,29 @@
 
 `skills/china-financial-official-documents/SKILL.md`
 
-当前发行版本：**2.5.0**（主文库、Claude、通用国产平台、千问、豆包、智谱同步）。
+当前发行版本：**2.6.0**（主文库、Claude、通用国产平台、千问、豆包、智谱同步）。
 
-**最近更新时间：2026-10-27（Asia/Shanghai）**。
+**最近更新时间：2026-10-28（Asia/Shanghai）**。
 
-本次发布新增17件规范资料：16件完整正文与1件附件待核验的公告；13件条文化规范共2,155条。法规证据复核记录日期为2026-10-03，**不表示截至最近更新时间已经完成全量法规时效复核**。
+原v2.5.0收录17件规范资料：16件完整正文与1件附件待核验的公告；13件条文化规范共2,155条。法规证据复核记录日期为2026-10-03，**不表示截至最近更新时间已经完成全量法规时效复核**。
 
+本次v2.6.0新增**银行ECL及呆账处理与核销专题**，附18个官方原始证据文件和17份文字提取件，专题核验日为2026-10-27。财金〔2017〕90号官方完整正文及附件仍待取得。
+
+- [银行ECL专题](skills/china-financial-official-documents/references/BANK_ECL.md)
+- [呆账处理与核销文件清单](skills/china-financial-official-documents/references/BANK_WRITEOFF.md)
+- [官方资料索引](skills/china-financial-official-documents/references/BANK_SOURCE_INDEX.md)
 - [法规正文索引与未完成事项](skills/china-financial-official-documents/references/LAW_INDEX.md)
 - [机器可读台账](skills/china-financial-official-documents/references/LEGAL_MANIFEST.json)
-- [GitHub版本下载](https://github.com/v22jasonh/Starry-sky/releases/tag/v2.5.0)
+- [GitHub版本下载](https://github.com/v22jasonh/Starry-sky/releases/tag/v2.6.0)
 
 |发行包|下载|
 |---|---|
-|core|[core v2.5.0](dist/china-financial-official-documents-core-v2.5.0.zip)|
-|claude|[claude v2.5.0](dist/china-financial-official-documents-claude-v2.5.0.zip)|
-|common|[common v2.5.0](dist/china-financial-official-documents-common-v2.5.0.zip)|
-|qwen|[qwen v2.5.0](dist/china-financial-official-documents-qwen-v2.5.0.zip)|
-|doubao|[doubao v2.5.0](dist/china-financial-official-documents-doubao-v2.5.0.zip)|
-|zhipu|[zhipu v2.5.0](dist/china-financial-official-documents-zhipu-v2.5.0.zip)|
+|core|[core v2.6.0](dist/china-financial-official-documents-core-v2.6.0.zip)|
+|claude|[claude v2.6.0](dist/china-financial-official-documents-claude-v2.6.0.zip)|
+|common|[common v2.6.0](dist/china-financial-official-documents-common-v2.6.0.zip)|
+|qwen|[qwen v2.6.0](dist/china-financial-official-documents-qwen-v2.6.0.zip)|
+|doubao|[doubao v2.6.0](dist/china-financial-official-documents-doubao-v2.6.0.zip)|
+|zhipu|[zhipu v2.6.0](dist/china-financial-official-documents-zhipu-v2.6.0.zip)|
 
 ## 适用范围
 

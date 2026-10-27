@@ -1,8 +1,8 @@
 # 智谱 / Zhipu 适配版
 
-版本：**2.5.0**
+版本：**2.6.0**
 
-更新时间：**2026-10-27（Asia/Shanghai）**。法规复核记录为2026-10-03；全量时效复核未完成。
+更新时间：**2026-10-28（Asia/Shanghai）**。法规复核记录为2026-10-03；全量时效复核未完成。
 
 本目录用于将“中国金融官方文件检索、效力分析与合同审核”方法部署到支持智能体系统提示词和知识库/文件上传的智谱相关场景。
 
@@ -27,3 +27,5 @@
 ## 本版正文库
 
 先上传 `references/LAW_INDEX.md`、`references/LEGAL_MANIFEST.json`，再按业务上传 `references/laws/`。图片公式、PDF原件如平台不支持，可从官方链接查阅。
+
+银行ECL及呆账核销专题核验日2026-10-27；详见 `references/BANK_ECL.md` 和 `references/BANK_WRITEOFF.md`。
